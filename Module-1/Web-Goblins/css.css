@@ -264,9 +264,9 @@ section {
     }
 }
 
-@media (max-width: 680px) {
-    .hero-img img {
-        width: 100%;
-        height: auto;
+    @media (max-width: 680px) {
+        .hero-img img {
+            width: 100%;
+            height: auto;
+        }
     }
-}

@@ -1,4 +1,11 @@
-let users = JSON.parse(localStorage.getItem('users'));
+// let users = JSON.parse(localStorage.getItem('users'));
+let users = [
+    {
+        username: "phuocmai",
+        email: "phuocmai@gmail.com",
+        password: "123456"
+    }
+];
 if (users === null) {
     users = [];
 }
@@ -13,6 +20,7 @@ function checkUserName(name) {
 }
 
 function checkUser(username, email, password) {
+    console.log(username, password)
     for (let i = 0; i < users.length; i++) {
         if ((users[i].username === username || users[i].email === username) && users[i].password === password) {
             return true;
